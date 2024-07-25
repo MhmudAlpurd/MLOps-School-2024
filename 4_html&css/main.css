@@ -1,0 +1,23 @@
+
+
+details{
+  background: green   ;
+  font-weight: bold;
+  color: white;
+  padding: 20px
+}
+
+summary{
+border: 2px solid blue;
+padding: 20px
+}
+
+
+body{
+    background-color: cadetblue;
+}
+
+h1 h2{
+
+    font-size: 200;
+}
