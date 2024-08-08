@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adding static files</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='/css/stylesheet.css')}}">
+
+</head>
+<body>
+      {{confidences | max}}
+      <br>
+      {{confidences | min}}
+      <br>
+      {{object | reverse }}
+      <br>
+      {{object | upper}}
+      <br>
+      {{'MY VOTE GOES TO THE BEST CANDIDATE.' | reverse_input }}
+
+      <br>
+      {{object | lower}}
+
+</body>
+</html>

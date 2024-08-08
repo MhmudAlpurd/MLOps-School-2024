@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adding static files</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='/css/stylesheet.css')}}">
+
+</head>
+<body>
+      <h2>python in html</h2>
+      {% if output %}
+        <p> this model has one output</p>
+        {% for object in objects%}
+            <li>{{object}}</li>
+        {% endfor %}
+        {%else%}
+            <p> your model not found! </p>
+
+      {%endif%}
+
+</body>
+</html>
