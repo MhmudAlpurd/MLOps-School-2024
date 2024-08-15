@@ -1,0 +1,15 @@
+{% extends 'main.html' %}
+
+{%block content %}
+
+<form action="/auth" method="post">
+   <p>
+      <input type="text" placeholder="enter your username" name="username">
+   </p>
+   <p>
+      <input type="password" placeholder="enter your password" name="password">  
+   </p>
+   <button>Login</button>   
+</form>
+
+{%endblock%}
