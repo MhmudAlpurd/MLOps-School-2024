@@ -1,0 +1,25 @@
+{% include 'header.html' %}
+
+
+<body>
+    <form action="{{url_for('Login')}}" method='post'>
+        
+        {{form.csrf_token}}
+
+        <p>
+            {{form.username.label}} {{form.username(placeholder='write username, here')}}
+        </p>
+        <p>
+            {{form.password.label}} {{form.password(placeholder='write password, here')}}
+        </p>
+        <p>
+            {{form.submit}}
+        </p>
+
+
+    </form>
+    
+</body>
+
+
+{% include 'footer.html' %}

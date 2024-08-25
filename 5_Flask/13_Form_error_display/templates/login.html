@@ -1,0 +1,41 @@
+{% include 'header.html' %}
+
+
+<body>
+    <form action="{{url_for('Login')}}" method='post' novalidate>
+        
+
+
+        <!--showing all errors!-->
+        {% if form.username.errors %}
+            {% for error in form.username.errors %}
+                <li> {{error}}</li>
+            {% endfor%}
+        {% endif%}
+
+        {% if form.password.errors %}
+            {% for error in form.password.errors %}
+                <li> {{error}}</li>
+            {% endfor%}
+        {% endif%}
+
+    
+        {{form.csrf_token}}
+
+        <p>
+            {{form.username.label}} {{form.username(placeholder='write username, here')}}
+        </p>
+        <p>
+            {{form.password.label}} {{form.password(placeholder='write password, here')}}
+        </p>
+        <p>
+            {{form.submit}}
+        </p>
+
+
+    </form>
+    
+</body>
+
+
+{% include 'footer.html' %}
