@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Input House Features</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h2 class="mt-5">Enter House Features</h2>
+        <form method="POST">
+            <div class="form-group">
+                <label>CRIM (Per Capita Crime Rate)</label>
+                <input type="text" class="form-control" name="CRIM" required>
+            </div>
+            <div class="form-group">
+                <label>ZN (Proportion of Residential Land Zoned)</label>
+                <input type="text" class="form-control" name="ZN" required>
+            </div>
+            <div class="form-group">
+                <label>INDUS (Proportion of Non-Retail Business Acres)</label>
+                <input type="text" class="form-control" name="INDUS" required>
+            </div>
+            <div class="form-group">
+                <label>CHAS (Charles River Dummy Variable)</label>
+                <input type="text" class="form-control" name="CHAS" required>
+            </div>
+            <div class="form-group">
+                <label>NOX (Nitric Oxide Concentration)</label>
+                <input type="text" class="form-control" name="NOX" required>
+            </div>
+            <div class="form-group">
+                <label>RM (Average Number of Rooms)</label>
+                <input type="text" class="form-control" name="RM" required>
+            </div>
+            <div class="form-group">
+                <label>AGE (Proportion of Owner-Occupied Units Built Before 1940)</label>
+                <input type="text" class="form-control" name="AGE" required>
+            </div>
+            <div class="form-group">
+                <label>DIS (Weighted Distances to Employment Centers)</label>
+                <input type="text" class="form-control" name="DIS" required>
+            </div>
+            <div class="form-group">
+                <label>RAD (Index of Accessibility to Highways)</label>
+                <input type="text" class="form-control" name="RAD" required>
+            </div>
+            <div class="form-group">
+                <label>TAX (Property Tax Rate)</label>
+                <input type="text" class="form-control" name="TAX" required>
+            </div>
+            <div class="form-group">
+                <label>PTRATIO (Pupil-Teacher Ratio)</label>
+                <input type="text" class="form-control" name="PTRATIO" required>
+            </div>
+            <div class="form-group">
+                <label>B (Proportion of Black Population)</label>
+                <input type="text" class="form-control" name="B" required>
+            </div>
+            <div class="form-group">
+                <label>LSTAT (Lower Status Population)</label>
+                <input type="text" class="form-control" name="LSTAT" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Predict Price</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
