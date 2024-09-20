@@ -1,0 +1,7 @@
+pycaret
+flask
+sklearn
+pandas
+pickle
+flask_sqlalchemy
+flask_bcrypt
