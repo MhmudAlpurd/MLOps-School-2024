@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+    web:
+      image: flask_docker_app
+      build: .
+      ports:
+          - "5000:5000"
+      
+      deploy:
+        replicas: 3
+        restart_policy:
+          condition: on-failure
+        
