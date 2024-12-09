@@ -1,0 +1,15 @@
+artifact_uri: file:///home/amin/Desktop/mlflow/mlflow_projects/mlruns/0/45fee5c624a14055bbbcfd39a9933829/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 45fee5c624a14055bbbcfd39a9933829
+run_name: gaudy-sponge-860
+run_uuid: 45fee5c624a14055bbbcfd39a9933829
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1733417801573
+status: 1
+tags: []
+user_id: amin

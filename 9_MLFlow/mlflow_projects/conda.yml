@@ -1,0 +1,12 @@
+name: california house price estimation
+
+channels:
+  - defaults
+
+dependencies:
+- python=3.11.4
+- pip<=24.3.1
+- mlflow
+- numpy
+- scikit-learn
+- scipy

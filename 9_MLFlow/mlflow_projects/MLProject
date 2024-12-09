@@ -1,0 +1,11 @@
+name: california house price estimation
+conda_env: conda.yml
+
+entry_points:
+ main:
+    parameters:
+      learning_rate : {type: float, default: 0.01}
+      test_size : {type: float, default: 0.1}
+      epochs : {type: int, default: 10}
+    command: >
+        python train.py --lr {learning_rate} --test_size {test_size} --epochs {epochs}
